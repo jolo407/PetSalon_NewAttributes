@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <img class="header-img" src="" alt="">
+        <div class="header-txt">
+            <h1>The Fashion Pet</h1>
+            <h2>Pet Grooming</h2>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <main class="container">
+<form action="">
+    <!--add the labels and the inputs
+    name:"Scooby",
+            age:50,
+            gender:"Male",
+            type:"Dog",
+            breed:"Dane",
+            service:"Full Service",
+            ownersName:"Shaggy",
+            contactPhone:"23-568-978"-->
+
+            <p class="form-group">
+                <label for="appointment">Appointment</label>
+                <input type="date" id="appointment" name="appointment">
+            </p>
+
+            <p class="form-group">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" name="name" id="petName">
+            </p>
+            
+           <p class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" name="age" id="petAge">
+            </p>
+
+            <p class="form-group">
+                <label for="gender">Gender:</label>
+                <select class="form-control" name="gender" id=petGender>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                </p>
+            
+            <p class="form-group">
+                <label for="type">Type:</label>
+                <select class="form-control" name="type" id="petType">
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Ferret">Ferret</option>
+                </select>
+                </p>
+
+            <p class="form-group">
+                <label for="breed">Breed:</label>
+                <input type="text" class="form-control" name="breed" id="petBreed">
+                </p>
+
+            <p class="form-group">
+                <label for="service">Choose a Service:</label>
+                <select class="form-control" name="service" id="service">
+                <option value="Nails">Nails Cut</option>
+                <option value="Shower">Shower</option>
+                <option value="Full Service">Full Service</option>
+                <option value="Haircut">Haircut</option>
+                <option value="Ear Cleaning">Ear Cleaning</option>
+                <option value="Declawing">Declawing</option>
+                <option value="Teeth Cleaning">Teeth Cleaning</option>
+                </select>
+                </p>
+
+                
+
+                <p class="form-group">
+                    <label for="price">Price</label>
+                     <input type="number" name="price" class="form-control" id="servicePrice">
+                </p>
+                
+                <p class="form-group">
+                    <label for ="paymentMethod">Payment</label>
+                    <select class="form-control" name="paymentMethod"
+                    id="paymentMethod">
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Paypal">Paypal</option>
+                    <option value="Cashapp">Cashapp</option>
+                </select>
+                </p>
+
+                <p class="form-group">
+                <label for="ownersName">OwnersName:</label>
+                <input type="text" class="form-control" name="ownersName" id="petownersName">
+                </p>
+
+
+                <p class="form-group">
+                <label for="contactPhone">ContactPhone:</label>
+                <input type="number" class="form-control" name="contactPhone" id="petcontactPhone">
+                </p>
+
+                <input type="button" class="btn btn-success" value="Register" onclick="register();">
+            
+                
+
+</form>
+        
+   </main>
+
+   <div class="general-info">
+       <p id="registeredPets"></p>
+       <p id="profits"></p></p>
+   </div>
+   
+    <div id="pets">
+    </div>
+
+
+
+    <footer>
+        <p id="footer-info"></p>
+    </footer> 
+
+   
+    <script src="js/main.js"></script>
+    <script src="js/display.js"></script>
+    <script src="js/directory.js"></script>
+    
+</body>
+</html>
